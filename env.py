@@ -7,8 +7,8 @@ class MiniGrid:
     def reset(self):
         self.agent = [0,0]
         self.goal = [self.size-1, self.size-1]
-        self.step = 0
-        return self.state
+        self.steps = 0
+        return self.state()
     
     def state(self):
         return {

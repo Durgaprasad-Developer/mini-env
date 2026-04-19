@@ -1,0 +1,16 @@
+name: mini-env
+entrypoint: app:app
+
+endpoints:
+  reset:
+    path: /reset
+    method: POST
+  step:
+    path: /step
+    method: POST
+
+action_space:
+  type: integer
+
+observation_space:
+  type: object
